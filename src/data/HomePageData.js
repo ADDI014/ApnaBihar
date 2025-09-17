@@ -330,28 +330,124 @@ export const festivals = [
   {
     id: 1,
     name: "Chhath Puja",
-    description: "An ancient Hindu Vedic festival dedicated to the Sun God, Surya, celebrating life and prosperity.",
     image: "/images/festivals/chhath.jpg",
+    description: "An ancient Hindu Vedic festival dedicated to the Sun God, Surya, celebrating life and prosperity.",
+    time_of_year: "October-November",
+    significance: "Chhath Puja is the most significant festival of Bihar. Devotees express gratitude to the Sun God Surya and his wife Usha (Chhathi Maiya) by observing a strict fast and offering prayers (Arghya) to the setting and rising sun."
   },
   {
     id: 2,
     name: "Sonepur Mela",
-    description: "One of Asia's largest cattle fairs, a vibrant confluence of commerce and culture on the Ganges.",
     image: "/images/festivals/sonepur-mela.jpg",
+    description: "One of Asia's largest cattle fairs, a vibrant confluence of commerce and culture on the Ganges.",
+    time_of_year: "November-December (on Kartik Purnima)",
+    significance: "The Sonepur Mela is a month-long event that combines spirituality with trade. It is historically famous for the trade of animals, especially elephants and horses, and features numerous stalls, folk performances, and amusement rides."
   },
-  // 👇 New items added
   {
     id: 3,
     name: "Sama Chakeva",
-    description: "A beautiful festival celebrating the brother-sister bond, marking the arrival of migratory birds.",
     image: "/images/festivals/sama-chakeva.jpg",
+    description: "A beautiful festival celebrating the brother-sister bond, marking the arrival of migratory birds.",
+    time_of_year: "November",
+    significance: "Celebrated in the Mithila region, Sama Chakeva marks the loving bond between brothers and sisters. Women create clay idols of birds and perform rituals, welcoming the migratory birds and wishing their brothers well."
   },
   {
     id: 4,
     name: "Makar Sankranti",
-    description: "Celebrated with feasts of 'dahi-chura' and sweets made of 'til', marking the end of winter.",
     image: "/images/festivals/makar-sankranti.jpg",
+    description: "Celebrated with feasts of 'dahi-chura' and sweets made of 'til', marking the end of winter.",
+    time_of_year: "January",
+    significance: "Marking the transition of the sun into the zodiac sign of Makara (Capricorn), this festival is celebrated with special feasts. In Bihar, it's synonymous with eating Dahi-Chura (curd and beaten rice) and sweets made from sesame seeds (Til)."
   },
+  {
+    id: 5,
+    name: "Bihula-Vishari Puja",
+    image: "/images/festivals/bihula.jpg",
+    description: "A prominent festival in the Anga region of Bihar, where devotees pray for the welfare of their families.",
+    time_of_year: "August",
+    significance: "This festival is dedicated to the serpent goddess Vishari, with devotees praying to protect their families from snake bites. It involves the vibrant depiction of the folklore of Bihula and her husband Bala Lakhendra."
+  },
+  {
+    id: 6,
+    name: "Madhushravani",
+    image: "/images/festivals/madhushravani.jpg",
+    description: "A festival celebrated with great fervor in the Mithila region, primarily by newly married women.",
+    time_of_year: "July-August",
+    significance: "This festival, celebrated for 13 days, is dedicated to Goddess Gauri. Newly married women observe a fast and perform rituals, praying for a long and happy married life. It is deeply rooted in the traditions of Mithilanchal."
+  },
+  {
+    id: 7,
+    name: "Pitrapaksha Mela, Gaya",
+    image: "/images/festivals/pitrapaksha.jpg",
+    description: "A significant 15-day period where Hindus pay homage to their ancestors (Pitra) in the holy city of Gaya.",
+    time_of_year: "September-October",
+    significance: "Gaya is considered a sacred place for Pind-daan, a ritual to pay homage to one's ancestors. During Pitrapaksha, millions of pilgrims from across the world visit Gaya to perform these rites for the peace of their ancestors' souls."
+  },
+  {
+    id: 8,
+    name: "Buddha Jayanti",
+    image: "/images/festivals/buddha-jayanti.jpg",
+    description: "The birth of Lord Buddha is celebrated with immense devotion, especially in Bodh Gaya.",
+    time_of_year: "April-May (on Vaisakh Purnima)",
+    significance: "As Bihar is the land of Buddha's enlightenment, Buddha Jayanti is celebrated with great reverence. The Mahabodhi Temple in Bodh Gaya becomes the epicenter of celebrations, attracting Buddhist devotees from around the globe."
+  },
+  {
+    id: 9,
+    name: "Saraswati Puja",
+    image: "/images/festivals/saraswati-puja.jpg",
+    description: "A vibrant festival dedicated to the goddess of knowledge, music, and art, celebrated with great zeal by students.",
+    time_of_year: "January-February (Basant Panchami)",
+    significance: "Saraswati Puja is a major event in Bihar, especially for students and educational institutions. Elaborate pandals are set up, and idols of the goddess are worshipped to seek blessings for wisdom and learning."
+  },
+  {
+    id: 10,
+    name: "Holi",
+    image: "/images/festivals/holi.jpg",
+    description: "The festival of colors, celebrated in Bihar with unique folk songs (Phagua) and traditional fervor.",
+    time_of_year: "March",
+    significance: "Holi in Bihar is marked by vibrant colors, community bonfires (Holika Dahan), and the singing of traditional Bhojpuri folk songs known as 'Phagua'. It's a time of great joy, feasting, and coming together."
+  },
+  {
+    id: 11,
+    name: "Mahashivratri",
+    image: "/images/festivals/mahashivratri.jpg",
+    description: "A major festival for Hindus, celebrating the marriage of Lord Shiva and Goddess Parvati.",
+    time_of_year: "February-March",
+    significance: "Devotees of Lord Shiva observe a fast and offer prayers, milk, and bael leaves at temples throughout the day and night. The Ajgaivinath Temple in Sultanganj is a major center for these celebrations."
+  },
+  {
+    id: 12,
+    name: "Ram Navami",
+    image: "/images/festivals/ram-navami.jpg",
+    description: "The festival celebrating the birth of Lord Rama, marked by processions and devotional songs.",
+    time_of_year: "March-April",
+    significance: "Ram Navami is celebrated with great devotion across Bihar. Temples are decorated, and religious processions carrying idols of Lord Rama, Sita, Lakshmana, and Hanuman are taken out, accompanied by bhajans and chanting."
+  },
+
+  {
+    id: 13,
+    name: "Durga Puja",
+    image: "/images/festivals/durga-puja.jpg",
+    description: "A ten-day festival celebrating the victory of Goddess Durga over the demon Mahishasur.",
+    time_of_year: "September-October",
+    significance: "Similar to West Bengal, Durga Puja is celebrated with grand pandals, elaborate idols, and cultural events, especially in cities like Patna. It's a time of great festivity, culminating in the immersion of the idols."
+  },
+  {
+    id: 14,
+    name: "Hartalika Teej",
+    image: "/images/festivals/teej.jpg",
+    description: "A significant festival for married women, who observe a fast for the well-being and longevity of their husbands.",
+    time_of_year: "August-September",
+    significance: "During Hartalika Teej, women dress in new clothes, observe a strict fast without food or water, and worship Lord Shiva and Goddess Parvati. It is a celebration of marital bliss and devotion."
+  },
+  {
+    id: 15,
+    name: "Rajgir Mahotsav",
+    image: "/images/festivals/rajgir-mahotsav.jpg",
+    description: "A vibrant festival of culture, dance, and music held in the ancient city of Rajgir.",
+    time_of_year: "December",
+    significance: "Organized by the Bihar Tourism Department, the Rajgir Mahotsav is a colorful event that showcases the traditional music, dance, and arts of the region. It features performances by renowned artists, martial arts demonstrations, and local fairs."
+  }
 ];
 
 export const arts = [
