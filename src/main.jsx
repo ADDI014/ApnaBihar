@@ -12,7 +12,7 @@ import HomePage from './Pages/HomePage.jsx';
 import CuisinesPage from './Pages/CuisinesPage.jsx';
 import CuisineDetailPage from './Pages/CuisineDetailPage.jsx';
 import FestivalsPage from './Pages/FestivalsPage.jsx';
-import FestivalDetailPage from './pages/FestivalDetailPage.jsx';
+import FestivalDetailPage from './Pages/FestivalDetailPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
