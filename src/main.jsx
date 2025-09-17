@@ -12,6 +12,7 @@ import HomePage from './Pages/HomePage.jsx';
 import CuisinesPage from './Pages/CuisinesPage.jsx';
 import CuisineDetailPage from './Pages/CuisineDetailPage.jsx';
 import FestivalsPage from './Pages/FestivalsPage.jsx';
+import FestivalDetailPage from './pages/FestivalDetailPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/festivals",
         element: <FestivalsPage />,
+      },
+      {
+        path: "/festivals/:id",
+        element: <FestivalDetailPage />,
       },
     ]
   },
