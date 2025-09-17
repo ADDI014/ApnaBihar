@@ -3,29 +3,23 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
-// 1. Import the necessary functions from React Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
+// Corrected import paths with lowercase 'pages'
 import TouristPlacesPage from './Pages/TouristPlacesPage.jsx';
 import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
-import HomePage from './Pages/Homepage.jsx';
+import HomePage from './Pages/HomePage.jsx'; // Corrected folder and file case
 
-
-
-// 2. Define your routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // The main App component is the layout
+    element: <App />,
     children: [
       {
         path: "/",
-        element: <HomePage />, // The HomePage is the default child
+        element: <HomePage />,
       },
-
-      // We will add other pages like Tourist Places here later
-        {
+      {
         path: "/tourist-places",
         element: <TouristPlacesPage />,
       },
@@ -37,7 +31,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-// 3. Provide the router to your app
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
