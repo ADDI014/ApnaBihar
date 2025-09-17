@@ -454,28 +454,123 @@ export const arts = [
   {
     id: 1,
     name: "Madhubani Painting",
-    description: "A famous, intricate style of folk painting characterized by complex geometric patterns.",
     image: "/images/arts/madhubani.jpg",
+    description: "A famous, intricate style of folk painting characterized by complex geometric patterns.",
+    origin: "Mithila Region",
+    details: "Also known as Mithila painting, this art form is practiced in the Mithila region of Bihar. It is characterized by its eye-catching geometrical patterns and is done with a variety of tools, including fingers, twigs, brushes, and matchsticks, using natural dyes and pigments."
   },
   {
     id: 2,
     name: "Sikki Grass Craft",
-    description: "An ancient craft where 'Sikki' grass is woven into beautiful decorative objects and baskets.",
     image: "/images/arts/sikki-grass.jpg",
+    description: "An ancient craft where 'Sikki' grass is woven into beautiful decorative objects and baskets.",
+    origin: "Mithila Region",
+    details: "Sikki grass crafts are made from the golden-hued Sikki grass found in the marshy areas of Mithila. The grass is coiled and stitched into various forms, creating beautiful and durable items like baskets, boxes, and toys, often adorned with colorful patterns."
   },
-  // 👇 New items added
   {
     id: 3,
     name: "Tikuli Art",
-    description: "A unique art form involving delicate hand-painting on hardboard, known for its glossy finish.",
     image: "/images/arts/tikuli.jpg",
+    description: "A unique art form involving delicate hand-painting on hardboard, known for its glossy finish.",
+    origin: "Patna",
+    details: "Tikuli art has a history of over 800 years, originally used to make decorative bindis. Today, it involves intricate hand-painting on glazed hardboard, depicting mythological stories and scenes from daily life. The paintings are known for their vibrant colors and glossy enamel finish."
   },
   {
     id: 4,
     name: "Sujini Embroidery",
-    description: "Traditional quilting and embroidery style, often depicting narrative and village scenes.",
     image: "/images/arts/sujini.jpg",
+    description: "Traditional quilting and embroidery style, often depicting narrative and village scenes.",
+    origin: "Muzaffarpur and surrounding areas",
+    details: "Sujini is a traditional form of embroidery where old clothes are quilted together to create a canvas. Artists then use a simple running stitch to outline and fill in narrative designs, often depicting social issues, folklore, and personal stories. It is a powerful medium for storytelling."
   },
+  {
+    id: 5,
+    name: "Manjusha Art",
+    image: "/images/arts/manjusha.jpg",
+    description: "Also known as Angika art, it is a folk art of the Anga region, characterized by its scroll paintings.",
+    origin: "Anga Region (Bhagalpur)",
+    details: "Manjusha art is a traditional folk art that tells the folklore of Bihula-Vishari. It is a line-based drawing form, characterized by the use of only three colors: pink, green, and yellow, representing celebration, nature, and joy respectively."
+  },
+  {
+    id: 6,
+    name: "Khatwa (Appliqué Work)",
+    image: "/images/arts/khatwa.jpg",
+    description: "A craft of creating decorative textiles by cutting and stitching patches of fabric onto a base cloth.",
+    origin: "Across Bihar",
+    details: "Khatwa is the art of appliqué, where pieces of fabric are cut into desired shapes and stitched onto a base fabric to create beautiful patterns. This technique is widely used to create decorative tents, canopies, and textiles for household use."
+  },
+  {
+    id: 7,
+    name: "Terracotta Crafts",
+    image: "/images/arts/terracotta.jpg",
+    description: "The art of creating pottery and figures from baked clay, a tradition that dates back centuries in Bihar.",
+    origin: "Across Bihar",
+    details: "Bihari terracotta is known for its rustic charm and simplicity. Potters create a wide range of items, from household utensils to decorative idols and animal figures, especially elephants and horses, which are often used as votive offerings."
+  },
+  {
+    id: 8,
+    name: "Bhojpuri Folk Arts",
+    image: "/images/arts/bhojpuri-music.jpg",
+    description: "A rich tradition of folk songs and music that narrates stories of life, rituals, and emotions.",
+    origin: "Bhojpur Region",
+    details: "The Bhojpuri-speaking region of Bihar has a vibrant tradition of folk arts, including music, dance, and theatre. Folk songs like 'Sohar' (celebrating childbirth) and 'Birha' (songs of separation) are integral parts of the cultural fabric."
+  },
+  {
+    id: 9,
+    name: "Stone Craft",
+    image: "/images/arts/stone-craft.jpg",
+    description: "The ancient art of carving stone, with the Patharkatti region in Gaya being a major historical center.",
+    origin: "Gaya (Patharkatti)",
+    details: "The tradition of stone carving in Bihar dates back to the Mauryan period. The Patharkatti area in Gaya is famous for its artisans who craft beautiful sculptures, household items, and architectural elements from the local blue-black pot stone."
+  },
+  {
+    id: 10,
+    name: "Lacquerware Bangles",
+    image: "/images/arts/lacquerware.jpg",
+    description: "The craft of making vibrant and ornate bangles from lac, a natural resin.",
+    origin: "Muzaffarpur",
+    details: "Muzaffarpur is a major center for producing traditional lac bangles, known as 'lahthi'. Artisans skillfully shape the lac and embed it with colorful beads, stones, and mirrors, creating beautiful ornaments worn by women during festivals and ceremonies."
+  },
+  {
+    id: 11,
+    name: "Bamboo Craft",
+    image: "/images/arts/bamboo-craft.jpg",
+    description: "The skill of creating a wide array of functional and decorative items from bamboo.",
+    origin: "Across Bihar",
+    details: "With an abundance of bamboo, artisans in Bihar create a variety of products. These range from household items like baskets, furniture, and fish traps to decorative pieces. The craft showcases the sustainable use of natural resources."
+  },
+  {
+    id: 12,
+    name: "Bidesia (Folk Theatre)",
+    image: "/images/arts/bidesia.jpg",
+    description: "A popular form of folk theatre that deals with social issues and the plight of migrant workers.",
+    origin: "Bhojpur Region",
+    details: "Created by the legendary Bhikhari Thakur, Bidesia is a powerful and emotional form of folk theatre. It combines dance, music, and drama to address social issues like poverty, migration, and the concerns of the rural working class."
+  },
+  {
+    id: 13,
+    name: "Paper Mache Craft",
+    image: "/images/arts/paper-mache.jpg",
+    description: "The art of creating masks, toys, and decorative items by molding paper pulp.",
+    origin: "Across Bihar",
+    details: "In Bihar, paper mache is used to create a variety of colorful and lightweight objects. Artisans soak and pulp paper, which is then molded into different shapes, dried, and painted with vibrant designs. Masks for folk dances are a prominent product."
+  },
+  {
+    id: 14,
+    name: "Dhokra (Metal Casting)",
+    image: "/images/arts/dhokra.jpg",
+    description: "An ancient metal casting technique using the lost-wax method to create intricate brass figurines.",
+    origin: "Tribal regions of Bihar",
+    details: "Dhokra art is a form of metal casting that has been practiced for over 4,000 years. Artisans create a clay core, cover it with beeswax which is then carved, and finally encase it in more clay. Molten brass is poured in, melting the wax and taking its shape, resulting in unique, rustic metal art."
+  },
+  {
+    id: 15,
+    name: "Wood Carving",
+    image: "/images/arts/wood-carving.jpg",
+    description: "The traditional skill of carving intricate designs into wooden doors, panels, and furniture.",
+    origin: "Across Bihar",
+    details: "Bihar has a long-standing tradition of wood carving. Artisans create ornate designs on doors, window panels, and furniture, often featuring floral motifs and mythological figures. This craft adds a decorative and traditional touch to homes and buildings."
+  }
 ];
 
 export const temples = [

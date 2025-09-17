@@ -13,6 +13,8 @@ import CuisinesPage from './Pages/CuisinesPage.jsx';
 import CuisineDetailPage from './Pages/CuisineDetailPage.jsx';
 import FestivalsPage from './Pages/FestivalsPage.jsx';
 import FestivalDetailPage from './Pages/FestivalDetailPage.jsx';
+import ArtsPage from './Pages/ArtsPage.jsx';
+import ArtDetailPage from './Pages/ArtDetailPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
         path: "/festivals/:id",
         element: <FestivalDetailPage />,
       },
+      {
+        path: "/arts",
+        element: <ArtsPage />,
+      },
+      {
+        path: "/arts/:id",
+        element: <ArtDetailPage />,
+      },
     ]
   },
 ]);
@@ -57,3 +67,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 );
+
+
