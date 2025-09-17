@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // 1. Import useState
-import Card from '../components/Card';
-import { touristSpots } from '../data/homePageData';
+import Card from '../Components/Card';
+// CORRECT
+import { touristSpots } from '../data/HomePageData';
 import { Link } from 'react-router-dom';
 
 // Search Icon SVG
