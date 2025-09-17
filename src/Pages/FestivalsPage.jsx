@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { festivals } from '../data/homePageData';
+import Card from '../Components/Card';
+import { festivals } from '../data/HomePageData';
 import { Link } from 'react-router-dom';
 
 const SearchIcon = () => (
