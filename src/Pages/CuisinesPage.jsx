@@ -19,23 +19,6 @@ function CuisinesPage() {
   return (
     <div className="bg-stone-50">
       {/* Hero Section */}
-      {/* <header 
-        className="relative h-96 bg-cover bg-center" 
-        style={{ backgroundImage: "url('/images/Background/cuisine-panorama.jpg')" }} // Add a food-related image here
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1 
-            className="text-4xl md:text-6xl font-extrabold"
-            style={{ fontFamily: "'Laila', sans-serif" }}
-          >
-            Flavors of Bihar
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mt-4">
-            Discover the rustic and authentic tastes of Bihari cuisine, a delightful blend of simple ingredients and rich flavors.
-          </p>
-        </div>
-      </header> */}
       
       {/* Main Content */}
       <div className="container mx-auto px-6 py-12">

@@ -1,8 +1,6 @@
-// src/pages/FestivalsPage.jsx
-
 import React, { useState } from 'react';
-import Card from '../Components/Card';
-import { festivals } from '../data/HomePageData';
+import Card from '../components/Card';
+import { festivals } from '../data/homePageData';
 import { Link } from 'react-router-dom';
 
 const SearchIcon = () => (
@@ -18,25 +16,24 @@ function FestivalsPage() {
 
   return (
     <div className="bg-stone-50">
-      <header 
-        className="relative h-96 bg-cover bg-center" 
-        style={{ backgroundImage: "url('/images/Background/festivals-panorama.jpg')" }} // Add a festival-related image
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1 
-            className="text-4xl md:text-6xl font-extrabold"
+      {/* Hero Section */}
+      
+      {/* Main Content */}
+      <div className="container mx-auto px-6 py-12">
+        {/* 👇 New Introductory Text Block 👇 */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 
+            className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
             style={{ fontFamily: "'Laila', sans-serif" }}
           >
-            Vibrant Festivals of Bihar
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mt-4">
-            Experience the rich tapestry of culture and tradition through the colorful and joyous festivals celebrated across Bihar.
+            A Celebration of Culture
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            The festivals of Bihar are a vibrant reflection of its rich history, deep-rooted traditions, and spiritual soul. From the solemn devotion of Chhath Puja to the bustling energy of the Sonepur Mela, each celebration offers a unique glimpse into the heart of the local culture and community.
           </p>
         </div>
-      </header>
-      
-      <main className="container mx-auto px-6 py-12">
+
+        {/* Search Bar */}
         <div className="mb-12 max-w-lg mx-auto">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -52,6 +49,7 @@ function FestivalsPage() {
           </div>
         </div>
 
+        {/* Conditional Grid of Cards */}
         {filteredFestivals.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredFestivals.map((item) => (
@@ -70,7 +68,7 @@ function FestivalsPage() {
             <p className="text-gray-500 mt-2">Try adjusting your search.</p>
           </div>
         )}
-      </main>
+      </div>
     </div>
   );
 }
