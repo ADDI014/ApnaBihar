@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../components/Card'; // Corrected the folder case to 'components'
+import Card from '../Components/Card'; // Corrected the folder case to 'components'
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 import { 
