@@ -38,6 +38,10 @@ const router = createBrowserRouter([
         path: "/cuisines/:id",
         element: <CuisineDetailPage />,
       },
+      {
+        path: "/festivals",
+        element: <FestivalsPage />,
+      },
     ]
   },
 ]);

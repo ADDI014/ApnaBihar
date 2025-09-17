@@ -7,7 +7,7 @@ function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Tourist Places', path: '/tourist-places' },
-    { name: 'Festivals', path: '#' },
+    { name: 'Festivals', path: '/festivals' },
     { name: 'Cuisines', path: '/cuisines' },
     { name: 'History', path: '#' },
   ];
