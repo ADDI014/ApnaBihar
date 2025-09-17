@@ -11,6 +11,7 @@ import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import CuisinesPage from './Pages/CuisinesPage.jsx';
 import CuisineDetailPage from './Pages/CuisineDetailPage.jsx';
+import FestivalsPage from './Pages/FestivalsPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
