@@ -9,7 +9,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import TouristPlacesPage from './Pages/TouristPlacesPage.jsx';
 import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
-import HomePage from './Pages/HomePage.jsx';
+import HomePage from './Pages/Homepage.jsx';
+
 
 
 // 2. Define your routes
