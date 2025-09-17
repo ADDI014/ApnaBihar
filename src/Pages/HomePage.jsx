@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Components/Card'; // Corrected the folder case to 'components'
+import Card from '../Components/Card';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 import { 
@@ -10,9 +10,9 @@ import {
   temples, 
   clothes, 
   history 
-} from '../data/HomePageData'; // Corrected file name case
+} from '../data/HomePageData';
 
-// Reusable component to display a category section with a title and item cards
+// Reusable component updated for horizontal scrolling on mobile
 const CategoryPreview = ({ title, items, link = "#" }) => (
   <section className="py-12 md:py-16">
     <div className="flex justify-between items-center mb-8">
@@ -29,16 +29,20 @@ const CategoryPreview = ({ title, items, link = "#" }) => (
         View All &rarr;
       </Link>
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      {/* 👇 Use .slice(0, 4) to get only the first four items from the array */}
+
+    {/* 👇 This is the main change 👇 */}
+    <div className="flex overflow-x-auto space-x-6 pb-4 scrollbar-hide sm:grid sm:grid-cols-2 sm:gap-8 sm:space-x-0 lg:grid-cols-4">
       {items.slice(0, 4).map((item) => (
-        <Link to={`${link}/${item.id}`} key={item.id} className="block">
-          <Card 
-            name={item.name} 
-            description={item.description} 
-            image={item.image} 
-          />
-        </Link>
+        // Each card now has a fixed width on mobile and won't shrink
+        <div key={item.id} className="w-5/6 flex-shrink-0 sm:w-full">
+          <Link to={`${link}/${item.id}`} className="block">
+            <Card 
+              name={item.name} 
+              description={item.description} 
+              image={item.image} 
+            />
+          </Link>
+        </div>
       ))}
     </div>
   </section>
@@ -67,7 +71,7 @@ function HomePage() {
             to="explore"
             smooth={true}
             duration={800}
-            offset={-70} // Adjust this offset to match your navbar's height
+            offset={-70}
             className="cursor-pointer bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 transform hover:scale-105"
           >
             Start Exploring

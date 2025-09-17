@@ -2,11 +2,13 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import { Outlet } from 'react-router-dom'; // 1. Import Outlet
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-stone-50">
       <Navbar />
+      <ScrollToTop />
       
       <main className="flex-grow">
         {/* 2. Replace HomePage with Outlet */}
