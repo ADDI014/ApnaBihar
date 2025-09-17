@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TouristPlacesPage from './Pages/TouristPlacesPage.jsx';
 import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
 import HomePage from './Pages/HomePage.jsx';
+import CuisinesPage from './Pages/CuisinesPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/tourist-places/:id",
         element: <TouristSpotDetailPage />,
+      },
+       {
+        path: "/cuisines",
+        element: <CuisinesPage />,
       },
     ]
   },

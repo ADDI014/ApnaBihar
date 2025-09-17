@@ -8,7 +8,7 @@ function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Tourist Places', path: '/tourist-places' },
     { name: 'Festivals', path: '#' },
-    { name: 'Cuisines', path: '#' },
+    { name: 'Cuisines', path: '/cuisines' },
     { name: 'History', path: '#' },
   ];
 
