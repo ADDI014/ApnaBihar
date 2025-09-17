@@ -10,7 +10,7 @@ import {
   temples, 
   clothes, 
   history 
-} from '../data/homePageData'; // Corrected file name case
+} from '../data/HomePageData'; // Corrected file name case
 
 // Reusable component to display a category section with a title and item cards
 const CategoryPreview = ({ title, items, link = "#" }) => (
