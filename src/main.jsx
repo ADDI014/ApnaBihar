@@ -10,6 +10,7 @@ import TouristPlacesPage from './Pages/TouristPlacesPage.jsx';
 import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import CuisinesPage from './Pages/CuisinesPage.jsx';
+import CuisineDetailPage from './Pages/CuisineDetailPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
        {
         path: "/cuisines",
         element: <CuisinesPage />,
+      },
+      {
+        path: "/cuisines/:id",
+        element: <CuisineDetailPage />,
       },
     ]
   },
