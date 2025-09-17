@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Corrected import paths with lowercase 'pages'
 import TouristPlacesPage from './Pages/TouristPlacesPage.jsx';
 import TouristSpotDetailPage from './Pages/TouristSpotDetailPage.jsx';
-import HomePage from './Pages/Homepage.jsx';
+import HomePage from './Pages/HomePage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
