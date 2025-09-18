@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Card from '../Components/Card';
-import { arts } from '../data/HomePageData';
+import { temples } from '../data/HomePageData';
 import { Link } from 'react-router-dom';
 
 const SearchIcon = () => (
   <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg>
 );
 
-function ArtsPage() {
+function TemplesPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredArts = arts.filter(art =>
-    art.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredTemples = temples.filter(temple =>
+    temple.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -26,10 +26,10 @@ function ArtsPage() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
             style={{ fontFamily: "'Laila', sans-serif" }}
           >
-            The Canvas of Culture
+            Sanctuaries of Faith
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            The art of Bihar is a testament to its vibrant history and the creative spirit of its people. From the world-renowned Madhubani paintings to the delicate Sikki grass work, each art form is a unique expression of folk traditions passed down through generations.
+            The temples of Bihar are not just architectural marvels but are living centers of faith that have drawn pilgrims for centuries. From the sacred grounds of Gaya to the bustling devotion in Patna, each temple has a unique story and a profound spiritual energy.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ function ArtsPage() {
             </div>
             <input
               type="text"
-              placeholder="Search for an art form..."
+              placeholder="Search for a temple..."
               className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -50,10 +50,10 @@ function ArtsPage() {
         </div>
 
         {/* Conditional Grid of Cards */}
-        {filteredArts.length > 0 ? (
+        {filteredTemples.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredArts.map((item) => (
-              <Link to={`/arts/${item.id}`} key={item.id} className="block">
+            {filteredTemples.map((item) => (
+              <Link to={`/temples/${item.id}`} key={item.id} className="block">
                 <Card 
                   name={item.name} 
                   description={item.description} 
@@ -64,7 +64,7 @@ function ArtsPage() {
           </div>
         ) : (
           <div className="text-center py-16">
-            <h3 className="text-2xl font-semibold text-gray-700">No Art Forms Found</h3>
+            <h3 className="text-2xl font-semibold text-gray-700">No Temples Found</h3>
             <p className="text-gray-500 mt-2">Try adjusting your search.</p>
           </div>
         )}
@@ -73,4 +73,4 @@ function ArtsPage() {
   );
 }
 
-export default ArtsPage;
+export default TemplesPage;

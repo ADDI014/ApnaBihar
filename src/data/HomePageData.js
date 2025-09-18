@@ -577,82 +577,367 @@ export const temples = [
   {
     id: 1,
     name: "Mahavir Mandir, Patna",
-    description: "One of the most sacred Hindu temples dedicated to Lord Hanuman, known for its faith and devotion.",
     image: "/images/temples/mahavir-mandir.jpg",
+    description: "One of the most sacred Hindu temples dedicated to Lord Hanuman, known for its faith and devotion.",
+    deity: "Lord Hanuman",
+    significance: "Located near Patna Junction, Mahavir Mandir is one of the most visited temples in North India. It is renowned for its 'Ram-rasoi' community kitchen and its contributions to various social and medical services, including a cancer hospital."
   },
   {
     id: 2,
     name: "Vishnupad Temple, Gaya",
-    description: "An ancient temple dedicated to Lord Vishnu, featuring a large footprint of the deity etched in rock.",
     image: "/images/temples/vishnupad.jpg",
+    description: "An ancient temple dedicated to Lord Vishnu, featuring a large footprint of the deity etched in rock.",
+    deity: "Lord Vishnu",
+    significance: "This ancient temple is a major Hindu pilgrimage site, especially for the 'Pind-daan' ritual for ancestors. The temple is built over a large basalt rock that bears a 40-cm-long footprint of Lord Vishnu, known as Dharmasila."
   },
-  // 👇 New items added
   {
     id: 3,
     name: "Jal Mandir, Pawapuri",
-    description: "A beautiful marble Jain temple located in the middle of a lotus pond, marking a sacred spot.",
     image: "/images/temples/jal-mandir.jpg",
+    description: "A beautiful marble Jain temple located in the middle of a lotus pond, marking a sacred spot.",
+    deity: "Lord Mahavira",
+    significance: "Pawapuri is where Lord Mahavira, the 24th Tirthankara, attained Mahaparinirvana. The Jal Mandir, or Water Temple, was built in the spot of his cremation and is a major pilgrimage destination for Jains."
   },
   {
     id: 4,
     name: "Patan Devi Temple, Patna",
-    description: "One of the 51 Siddha Shakti Pithas, a revered shrine dedicated to Goddess Sati.",
     image: "/images/temples/patan-devi.jpg",
+    description: "One of the 51 Siddha Shakti Pithas, a revered shrine dedicated to Goddess Sati.",
+    deity: "Goddess Sati (Durga)",
+    significance: "Also known as the Maa Patneshwari, this temple is considered one of the most sacred Shakti Pithas. It is believed that the right thigh of the Goddess Sati fell here. The city of Patna is said to derive its name from this temple."
   },
+  {
+    id: 5,
+    name: "Mundeshwari Devi Temple, Kaimur",
+    image: "/images/temples/mundeshwari.jpg",
+    description: "Considered one of the oldest functional Hindu temples in India, dating back to 108 AD.",
+    deity: "Devi Mundeshwari & Chaturmukha (four-faced) Shiva",
+    significance: "Located on the Mundeshwari Hills, this octagonal stone temple is an architectural marvel and is protected by the Archaeological Survey of India. It is a rare example of Nagara style of temple architecture and has been in continuous worship since its inception."
+  },
+  {
+    id: 6,
+    name: "Sun Temple, Deo",
+    image: "/images/temples/sun-temple-deo.jpg",
+    description: "A revered sun temple in Aurangabad district, famous for its unique architecture and Chhath Puja celebrations.",
+    deity: "Surya (The Sun God)",
+    significance: "The Deo Sun Temple is a 15th-century temple dedicated to the Sun God. Uniquely, its main entrance faces west instead of the traditional east. It attracts massive crowds during Chhath Puja, who gather to offer prayers."
+  },
+  {
+    id: 7,
+    name: "Ajgaivinath Temple, Sultanganj",
+    image: "/images/temples/ajgaivinath.jpg",
+    description: "An ancient Shiva temple situated on a rock in the middle of the Ganges river.",
+    deity: "Lord Shiva",
+    significance: "This temple is the starting point for the Kanwar Yatra, an annual pilgrimage where devotees collect holy water from the Ganges at Sultanganj and carry it to the Baidyanath Temple in Deoghar. The location itself is stunning."
+  },
+  {
+    id: 8,
+    name: "Mahabodhi Temple, Bodh Gaya",
+    image: "/images/temples/mahabodhi.jpg",
+    description: "A UNESCO World Heritage site marking the location where the Buddha attained enlightenment.",
+    deity: "Lord Buddha",
+    significance: "The Mahabodhi Temple is the most sacred site in Buddhism. The complex includes the holy Bodhi Tree under which Siddhartha Gautama attained enlightenment. It is a major pilgrimage destination for Buddhists from all over the world."
+  },
+  {
+    id: 9,
+    name: "Hariharnath Temple, Sonepur",
+    image: "/images/temples/hariharnath.jpg",
+    description: "A unique temple dedicated to Harihara, a combined form of Lord Vishnu and Lord Shiva.",
+    deity: "Harihara (Vishnu & Shiva)",
+    significance: "Located at the confluence of the rivers Ganga and Gandak, this temple is central to the famous Sonepur Mela. It is one of the few temples in the world dedicated to the syncretic deity of Harihara, symbolizing the unity of the Shaivite and Vaishnavite sects."
+  },
+  {
+    id: 10,
+    name: "Aami Mandir, Chhapra",
+    image: "/images/temples/aami-mandir.jpg",
+    description: "A famous temple in the Saran district, considered to be one of the Shakti Peethas.",
+    deity: "Goddess Sati (Durga)",
+    significance: "The Aami Mandir is a revered place of worship, believed to be a Shakti Peeth where a part of Goddess Sati's body fell. A unique feature is the 'yagna kund' (sacrificial fire pit) which is said to never extinguish."
+  },
+  {
+    id: 11,
+    name: "Singheshwar Sthan, Madhepura",
+    image: "/images/temples/singheshwar.jpg",
+    description: "A highly revered temple dedicated to Lord Shiva, known for its large annual fair during Mahashivratri.",
+    deity: "Lord Shiva",
+    significance: "The Singheshwar Sthan is an ancient temple with a self-manifested (swayambhu) lingam. It holds great religious importance, and the Mahashivratri mela (fair) held here attracts hundreds of thousands of devotees."
+  },
+  {
+    id: 12,
+    name: "Ashokdham Temple, Lakhisarai",
+    image: "/images/temples/ashokdham.jpg",
+    description: "A major pilgrimage center featuring one of the largest Shiva Lingams in India.",
+    deity: "Lord Shiva",
+    significance: "The temple complex at Ashokdham is famous for its massive black stone Shivalingam. The story of its discovery and the subsequent development of the temple complex makes it a fascinating and deeply spiritual place for devotees."
+  },
+  {
+    id: 13,
+    name: "Garibnath Temple, Muzaffarpur",
+    image: "/images/temples/garibnath.jpg",
+    description: "An important Lord Shiva temple, often referred to as the 'Deoghar of Bihar'.",
+    deity: "Lord Shiva",
+    significance: "Garibnath Dham is a highly popular Shiva temple that attracts a massive number of 'Kanwariya' pilgrims during the holy month of Shraavana, similar to the main pilgrimage to Deoghar. It is a central place of worship in Muzaffarpur."
+  },
+  {
+    id: 14,
+    name: "Kapileshwar Temple, Madhubani",
+    image: "/images/temples/kapileshwar.jpg",
+    description: "A famous Shiva temple in the Mithila region, believed to be established by the sage Kapila.",
+    deity: "Lord Shiva",
+    significance: "Kapileshwar Sthan is an ancient temple dedicated to Lord Shiva. It is believed that the sage Kapila Muni established the Shivalingam here. The temple is a significant religious site in the Mithila region, especially during Mahashivratri and the month of Shraavana."
+  },
+  {
+    id: 15,
+    name: "Budhi Mai Temple, Patna",
+    image: "/images/temples/budhi-mai.jpg",
+    description: "An ancient and revered temple dedicated to the goddess Budhi Mai, a guardian deity of Patna.",
+    deity: "Budhi Mai (an incarnation of Goddess Durga)",
+    significance: "The Budhi Mai temple is one of the oldest in Patna and is dedicated to a powerful folk goddess considered to be a protector of the city. It is especially crowded during the Navratri festival, attracting devotees from all parts of the city and beyond."
+  }
 ];
 
 export const clothes = [
   {
     id: 1,
     name: "Tussar Silk Sarees",
-    description: "Famous for their rich texture and natural deep gold color, these sarees are a symbol of Bihar's heritage.",
     image: "/images/clothes/tussar-silk.jpg",
+    description: "Famous for their rich texture and natural deep gold color, these sarees are a symbol of Bihar's heritage.",
+    materials: "Tussar Silk, Zari thread",
+    details: "Bhagalpur, the 'Silk City' of Bihar, is renowned for its Tussar silk. These sarees are prized for their unique texture, natural golden sheen, and lightweight feel. They are often adorned with traditional motifs inspired by nature and Madhubani art."
   },
   {
     id: 2,
     name: "Dhoti-Kurta",
-    description: "The classic traditional attire for men in Bihar, representing simplicity and cultural identity.",
     image: "/images/clothes/dhoti-kurta.jpg",
+    description: "The classic traditional attire for men in Bihar, representing simplicity and cultural identity.",
+    materials: "Cotton, Silk",
+    details: "The Dhoti-Kurta is the quintessential traditional male garment in Bihar. The dhoti, a long piece of unstitched cloth, is wrapped around the waist and legs, while the kurta is a loose-fitting tunic. It is a comfortable and elegant outfit worn during festivals and ceremonies."
   },
-  // 👇 New items added
   {
     id: 3,
     name: "Bhagalpuri Silk",
-    description: "Also known as the 'Queen of all fabrics', renowned for its unique and superior quality.",
     image: "/images/clothes/bhagalpuri-silk.jpg",
+    description: "Also known as the 'Queen of all fabrics', renowned for its unique and superior quality.",
+    materials: "Tussar Silk Cocoon threads",
+    details: "Bhagalpuri silk is a type of Tussar silk known for its exceptional quality and texture. The fabric is used to create not just sarees but also suits, dupattas, and other garments. Its breathability and elegant drape make it a popular choice for all seasons."
   },
   {
     id: 4,
     name: "Madhubani Print Attire",
-    description: "Modern garments like kurtas and dupattas featuring the traditional Madhubani art form.",
     image: "/images/clothes/madhubani-print.jpg",
+    description: "Modern garments like kurtas and dupattas featuring the traditional Madhubani art form.",
+    materials: "Cotton, Silk, Natural Dyes",
+    details: "The world-famous Madhubani painting style is now intricately hand-painted onto textiles. Sarees, dupattas, and kurtas featuring these vibrant, detailed motifs are a beautiful fusion of traditional art and contemporary fashion."
   },
+  {
+    id: 5,
+    name: "Sujini Embroidered Textiles",
+    image: "/images/clothes/sujini-textiles.jpg",
+    description: "Exquisite sarees, dupattas, and fabrics featuring the narrative Sujini embroidery.",
+    materials: "Cotton, Silk, Colorful threads",
+    details: "Sujini embroidery, a traditional quilting art, is used to create stunning narrative designs on textiles. This running stitch embroidery is featured on sarees, shawls, and kurtas, turning each piece into a unique work of storytelling art."
+  },
+  {
+    id: 6,
+    name: "Khatwa Appliqué Work",
+    image: "/images/clothes/khatwa-work.jpg",
+    description: "Colorful and intricate appliqué designs that adorn various garments and home furnishings.",
+    materials: "Cotton, Fabric patches, Thread",
+    details: "Khatwa is the art of appliqué, where pieces of fabric are cut into desired shapes and stitched onto a base fabric. This technique is used to create vibrant patterns on women's clothing, adding a layer of texture and color."
+  },
+  {
+    id: 7,
+    name: "Traditional Cotton Weaves",
+    image: "/images/clothes/cotton-weaves.jpg",
+    description: "Bihar's handloom industry also produces fine cotton textiles known for their comfort and durability.",
+    materials: "Cotton",
+    details: "Apart from silk, Bihar has a strong tradition of cotton handloom weaving. Centers like Bihar Sharif and Madhubani produce durable and comfortable cotton fabrics used for daily wear sarees, dhotis, and other garments."
+  },
+  {
+    id: 8,
+    name: "Mithila Paag",
+    image: "/images/clothes/mithila-paag.jpg",
+    description: "The traditional turban or headgear from the Mithila region, a symbol of honor and respect.",
+    materials: "Cotton",
+    details: "The Paag is a unique and colorful head covering worn by Maithil people. It is a symbol of pride and cultural identity in the Mithila region of Bihar. Its shape and color can signify the status and occasion for the wearer."
+  },
+  {
+    id: 9,
+    name: "Gamcha",
+    image: "/images/clothes/gamcha.jpg",
+    description: "The iconic and versatile cotton towel or scarf, typically with a red and white checkered pattern.",
+    materials: "Cotton",
+    details: "The Gamcha is a simple yet indispensable piece of cloth in Bihari households. This thin, coarse cotton towel is used for bathing, as a scarf, a head covering, or a waistband. It represents the rustic and practical lifestyle of the region."
+  },
+  {
+    id: 10,
+    name: "Kurta-Pajama",
+    image: "/images/clothes/kurta-pajama.jpg",
+    description: "A comfortable and widely worn traditional outfit for men, suitable for both daily wear and occasions.",
+    materials: "Cotton, Silk, Linen",
+    details: "Alongside the Dhoti-Kurta, the Kurta-Pajama is a staple in a Bihari man's wardrobe. The long tunic (kurta) paired with loose-fitting trousers (pajama) is a comfortable, elegant, and versatile outfit for all ages."
+  },
+  {
+    id: 11,
+    name: "Tikuli Jewellery",
+    image: "/images/clothes/tikuli-jewellery.jpg",
+    description: "Traditional ornaments based on the ancient Tikuli art form, often worn as bindis or pendants.",
+    materials: "Hardboard, Enamel, Gold foil",
+    details: "Originating from the art of making decorative bindis, Tikuli has evolved into a form of jewellery. Artisans paint intricate designs on small pieces of hardboard, which are then used to make beautiful pendants, earrings, and other ornaments."
+  },
+  {
+    id: 12,
+    name: "Salwar-Kameez",
+    image: "/images/clothes/salwar-kameez.jpg",
+    description: "A popular and practical everyday attire for women, often featuring local prints and embroidery.",
+    materials: "Cotton, Synthetic fabrics, Silk",
+    details: "The Salwar-Kameez is the most common daily wear for women in Bihar. It consists of a tunic (kameez), loose trousers (salwar), and a scarf (dupatta). Local versions often feature Madhubani prints or Sujini embroidery."
+  },
+  {
+    id: 13,
+    name: "Hansuli",
+    image: "/images/clothes/hansuli.jpg",
+    description: "A traditional, rigid metal necklace worn by women in rural Bihar.",
+    materials: "Silver, Bell metal",
+    details: "The Hansuli is a traditional crescent-shaped, rigid collar necklace, typically made of silver or other metals. It is a classic piece of folk jewellery that has been worn by women in the region for generations, signifying their cultural heritage."
+  },
+  {
+    id: 14,
+    name: "Lac Bangles (Lahthi)",
+    image: "/images/clothes/lac-bangles.jpg",
+    description: "Vibrant and ornate bangles made from lac, a natural resin, especially famous in Muzaffarpur.",
+    materials: "Lac, Glass beads, Stones",
+    details: "Known as 'Lahthi', these bangles are an integral part of bridal wear and festive attire. Artisans in cities like Muzaffarpur skillfully shape the lac and embed it with colorful beads, stones, and mirrors to create stunning designs."
+  },
+  {
+    id: 15,
+    name: "Mirzai",
+    image: "/images/clothes/mirzai.jpg",
+    description: "A traditional cotton jacket or vest, often worn over a kurta for a layered look.",
+    materials: "Cotton",
+    details: "The Mirzai is a traditional sleeveless or half-sleeved jacket worn by men in rural Bihar. It's typically made of cotton and worn over a kurta, providing an extra layer for warmth and style. It is a part of the traditional formal and semi-formal wear."
+  }
 ];
 
 export const history = [
   {
     id: 1,
     name: "The Mauryan Empire",
-    description: "Explore the legacy of one of India's greatest empires, with its capital in Pataliputra (modern Patna).",
     image: "/images/history/mauryan-empire.jpg",
+    description: "Explore the legacy of one of India's greatest empires, with its capital in Pataliputra (modern Patna).",
+    time_period: "c. 322–184 BCE",
+    detailed_account: "Founded by Chandragupta Maurya, the Mauryan Empire was one of the world's largest empires of its time. Under Emperor Ashoka the Great, it reached its zenith, and a unified administration was established across most of the Indian subcontinent. Ashoka's rock and pillar edicts are a testament to his rule and his propagation of Dhamma."
   },
   {
     id: 2,
     name: "Rise of Buddhism & Jainism",
-    description: "Discover how Bihar became the cradle of two of the world's most influential religions.",
     image: "/images/history/buddhism-jainism.jpg",
+    description: "Discover how Bihar became the cradle of two of the world's most influential religions.",
+    time_period: "6th-5th Century BCE",
+    detailed_account: "In the 6th century BCE, the region of Magadha (modern Bihar) became the epicenter of a profound spiritual awakening. It was here that Siddhartha Gautama attained enlightenment to become the Buddha in Bodh Gaya, and Vardhamana Mahavira, the 24th Tirthankara, revived Jainism."
   },
-  // 👇 New items added
   {
     id: 3,
     name: "Gupta Dynasty's Golden Age",
-    description: "Learn about the period of great scientific and artistic achievements with strong roots in Bihar.",
     image: "/images/history/gupta-dynasty.jpg",
+    description: "Learn about the period of great scientific and artistic achievements with strong roots in Bihar.",
+    time_period: "c. 320–550 CE",
+    detailed_account: "The Gupta Empire, often called the Golden Age of India, had its origins in the Magadha region. This era saw remarkable advancements in science, mathematics, astronomy, religion, and philosophy. The Nalanda University flourished under Gupta patronage."
   },
   {
     id: 4,
     name: "Nalanda as a Learning Hub",
-    description: "Uncover the history of the ancient university that attracted scholars from all over the world.",
     image: "/images/history/nalanda-hub.jpg",
+    description: "Uncover the history of the ancient university that attracted scholars from all over the world.",
+    time_period: "5th-12th Century CE",
+    detailed_account: "The ancient university of Nalanda was a globally renowned center for learning. It housed over 10,000 students and 2,000 teachers, with a vast library called 'Dharma Gunj'. Scholars like Xuanzang from China studied here, documenting its immense intellectual wealth."
   },
+  {
+    id: 5,
+    name: "Ancient Vaishali Republic",
+    image: "/images/history/vaishali.jpg",
+    description: "The capital of the Licchavis, considered one of the first examples of a republic in the world.",
+    time_period: "c. 6th Century BCE",
+    detailed_account: "Vaishali was the capital city of the Vajjian Confederacy of (Licchavis), which is considered one of the earliest examples of a republican form of government. It was also the site of the Second Buddhist council and a place Lord Buddha visited frequently."
+  },
+  {
+    id: 6,
+    name: "The Pala Empire",
+    image: "/images/history/pala-empire.jpg",
+    description: "A powerful imperial power that championed Mahayana Buddhism and founded the Vikramshila university.",
+    time_period: "8th-12th Century CE",
+    detailed_account: "The Pala dynasty originated in the region and became a dominant power in the northern and eastern Indian subcontinent. They were great patrons of Mahayana Buddhism and art, and founded the Vikramshila University, another important center of learning."
+  },
+  {
+    id: 7,
+    name: "Sher Shah Suri's Reign",
+    image: "/images/history/sher-shah.jpg",
+    description: "The rule of the visionary emperor from Sasaram who introduced significant administrative reforms.",
+    time_period: "1540–1545 CE",
+    detailed_account: "Sher Shah Suri, from Sasaram in Bihar, was a brilliant strategist and administrator. He established the Sur Empire and introduced major reforms in administration, currency (the 'rupiya'), and infrastructure, including the Grand Trunk Road."
+  },
+  {
+    id: 8,
+    name: "Champaran Satyagraha",
+    image: "/images/history/champaran.jpg",
+    description: "The site of Mahatma Gandhi's first Satyagraha movement in India, a major event in the freedom struggle.",
+    time_period: "1917 CE",
+    detailed_account: "The Champaran Satyagraha was the first major non-violent resistance campaign led by Mahatma Gandhi in India. He championed the cause of the indigo farmers against the oppressive policies of the British landlords, marking a pivotal moment in India's independence movement."
+  },
+  {
+    id: 9,
+    name: "The Magadha Kingdom",
+    image: "/images/history/magadha.jpg",
+    description: "The powerful ancient kingdom that formed the bedrock of India's first great empires.",
+    time_period: "c. 684–322 BCE",
+    detailed_account: "Before the Mauryas, the kingdom of Magadha, with its capital at Rajgir and later Pataliputra, was the most powerful of the sixteen Mahajanapadas. Dynasties like the Haryanka and Shishunaga laid the foundation for a centralized Indian state."
+  },
+  {
+    id: 10,
+    name: "Aryabhata & Ancient Science",
+    image: "/images/history/aryabhata.jpg",
+    description: "The legacy of the great astronomer-mathematician Aryabhata, who worked in Pataliputra.",
+    time_period: "5th Century CE",
+    detailed_account: "Aryabhata, one of the greatest minds of classical Indian history, had his observatory at Taregana, near Pataliputra. His work, 'Aryabhatiya', made fundamental contributions to mathematics and astronomy, including the concept of zero and an accurate approximation of Pi."
+  },
+  {
+    id: 11,
+    name: "Mithila (Videha) Kingdom",
+    image: "/images/history/mithila-kingdom.jpg",
+    description: "The ancient kingdom ruled by King Janaka, renowned for its scholarship and as the land of Sita.",
+    time_period: "Vedic Period (c. 1500–500 BCE)",
+    detailed_account: "The Videha kingdom, with its capital in Mithila, was a prominent Mahajanapada. It was famed for its philosopher-king, Janaka, and is revered in the epic Ramayana as the birthplace of Goddess Sita. The region has a long history of learning and philosophy."
+  },
+  {
+    id: 12,
+    name: "Kunwar Singh & the 1857 Revolt",
+    image: "/images/history/kunwar-singh.jpg",
+    description: "The heroic leadership of Veer Kunwar Singh during the Indian Rebellion of 1857.",
+    time_period: "1857–1858 CE",
+    detailed_account: "At nearly 80 years old, Veer Kunwar Singh of Jagdispur became one of the most remarkable military leaders of the 1857 rebellion. He led a formidable guerrilla campaign against the British East India Company, achieving several victories and inspiring many."
+  },
+  {
+    id: 13,
+    name: "The Battle of Buxar",
+    image: "/images/history/battle-of-buxar.jpg",
+    description: "A decisive battle that established the British East India Company as a dominant force in India.",
+    time_period: "1764 CE",
+    detailed_account: "Fought near Buxar, this battle was a decisive victory for the British East India Company over the combined forces of the Mughal Emperor and the Nawabs of Bengal and Awadh. The victory granted the British 'Diwani' rights, the right to collect revenue, cementing their control over the region."
+  },
+  {
+    id: 14,
+    name: "The Anga Kingdom",
+    image: "/images/history/anga-kingdom.jpg",
+    description: "An ancient kingdom mentioned in the Mahabharata, known for trade and its capital, Champa.",
+    time_period: "c. 12th–6th Century BCE",
+    detailed_account: "Anga was one of the sixteen Mahajanapadas, with its capital at Champa (near modern Bhagalpur). It was a prosperous center for trade and commerce, with its merchants sailing to distant lands. In the Mahabharata, it was the kingdom given to Karna by Duryodhana."
+  },
+  {
+    id: 15,
+    name: "The JP Movement",
+    image: "/images/history/jp-movement.jpg",
+    description: "A major political movement led by Jayaprakash Narayan, calling for 'Total Revolution'.",
+    time_period: "1974–1975 CE",
+    detailed_account: "The 'Bihar Movement' or JP Movement was a popular uprising led by veteran Gandhian socialist Jayaprakash Narayan. It started as a student protest against corruption in Bihar and grew into a nationwide call for 'Total Revolution', significantly impacting Indian politics and leading to the Emergency."
+  }
 ];

@@ -15,6 +15,12 @@ import FestivalsPage from './Pages/FestivalsPage.jsx';
 import FestivalDetailPage from './Pages/FestivalDetailPage.jsx';
 import ArtsPage from './Pages/ArtsPage.jsx';
 import ArtDetailPage from './Pages/ArtDetailPage.jsx';
+import TemplesPage from './Pages/TemplesPage.jsx';
+import TempleDetailPage from './Pages/TempleDetailPage.jsx';
+import ClothesPage from './Pages/ClothesPage.jsx';
+import ClothesDetailPage from './Pages/ClothesDetailPage.jsx';
+import HistoryPage from './Pages/HistoryPage.jsx';
+import HistoryDetailPage from './Pages/HistoryDetailPage.jsx';
 // Corrected folder and file case
 
 const router = createBrowserRouter([
@@ -57,6 +63,30 @@ const router = createBrowserRouter([
       {
         path: "/arts/:id",
         element: <ArtDetailPage />,
+      },
+      {
+        path: "/temples",
+        element: <TemplesPage />,
+      },
+      {
+        path: "/temples/:id",
+        element: <TempleDetailPage />,
+      },
+      {
+        path: "/clothes",
+        element: <ClothesPage />,
+      },
+      {
+        path: "/clothes/:id",
+        element: <ClothesDetailPage />,
+      },
+       {
+        path: "/history",
+        element: <HistoryPage />,
+      },
+      {
+        path: "/history/:id",
+        element: <HistoryDetailPage />,
       },
     ]
   },

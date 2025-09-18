@@ -10,6 +10,7 @@ function Navbar() {
     { name: 'Festivals', path: '/festivals' },
     { name: 'Cuisines', path: '/cuisines' },
     { name: 'History', path: '#' },
+    { name: 'Temples', path: '/temples'},
   ];
 
   return (

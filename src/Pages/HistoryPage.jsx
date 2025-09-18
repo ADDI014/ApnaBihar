@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import Card from '../Components/Card';
-import { arts } from '../data/HomePageData';
+import { history } from '../data/HomePageData';
 import { Link } from 'react-router-dom';
 
 const SearchIcon = () => (
   <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg>
 );
 
-function ArtsPage() {
+function HistoryPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredArts = arts.filter(art =>
-    art.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredHistory = history.filter(item =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="bg-stone-50">
-      {/* Hero Section */}
       
       {/* Main Content */}
       <div className="container mx-auto px-6 py-12">
@@ -26,10 +25,10 @@ function ArtsPage() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
             style={{ fontFamily: "'Laila', sans-serif" }}
           >
-            The Canvas of Culture
+            The Cradle of Empires
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            The art of Bihar is a testament to its vibrant history and the creative spirit of its people. From the world-renowned Madhubani paintings to the delicate Sikki grass work, each art form is a unique expression of folk traditions passed down through generations.
+            Bihar's history is the history of India itself. This ancient land was the seat of the mighty Mauryan and Gupta empires, the birthplace of Buddhism and Jainism, and a global center of learning at Nalanda. From ancient republics to pivotal moments in the freedom struggle, Bihar's past is a rich and inspiring saga.
           </p>
         </div>
 
@@ -41,19 +40,19 @@ function ArtsPage() {
             </div>
             <input
               type="text"
-              placeholder="Search for an art form..."
+              placeholder="Search for a historical topic..."
               className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => setSearchTerm(e.gex.target.value)}
             />
           </div>
         </div>
 
         {/* Conditional Grid of Cards */}
-        {filteredArts.length > 0 ? (
+        {filteredHistory.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredArts.map((item) => (
-              <Link to={`/arts/${item.id}`} key={item.id} className="block">
+            {filteredHistory.map((item) => (
+              <Link to={`/history/${item.id}`} key={item.id} className="block">
                 <Card 
                   name={item.name} 
                   description={item.description} 
@@ -64,7 +63,7 @@ function ArtsPage() {
           </div>
         ) : (
           <div className="text-center py-16">
-            <h3 className="text-2xl font-semibold text-gray-700">No Art Forms Found</h3>
+            <h3 className="text-2xl font-semibold text-gray-700">No Topics Found</h3>
             <p className="text-gray-500 mt-2">Try adjusting your search.</p>
           </div>
         )}
@@ -73,4 +72,4 @@ function ArtsPage() {
   );
 }
 
-export default ArtsPage;
+export default HistoryPage;
