@@ -4,6 +4,7 @@ import ShimmerCard from '../Components/ShimmerCard';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import { 
   touristSpots, 
   cuisines, 
@@ -14,8 +15,8 @@ import {
   history 
 } from '../data/HomePageData';
 
-// Reusable component with scroll animations
 const CategoryPreview = ({ title, items, link = "#" }) => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -27,28 +28,18 @@ const CategoryPreview = ({ title, items, link = "#" }) => {
       className={`py-12 md:py-16 transition-all duration-700 ease-in-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
     >
       <div className="flex justify-between items-center mb-8">
-        <h2 
-          className="text-3xl md:text-4xl font-bold text-gray-800" 
-          style={{ fontFamily: "'Laila', sans-serif" }}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800" style={{ fontFamily: "'Laila', sans-serif" }}>
           {title}
         </h2>
-        <Link 
-          to={link} 
-          className="text-orange-600 font-semibold hover:underline transition-colors"
-        >
-          View All &rarr;
+        <Link to={link} className="text-orange-600 font-semibold hover:underline transition-colors">
+          {t('view_all')} &rarr;
         </Link>
       </div>
       <div className="flex overflow-x-auto space-x-6 pb-4 scrollbar-hide sm:grid sm:grid-cols-2 sm:gap-8 sm:space-x-0 lg:grid-cols-4">
         {items.slice(0, 4).map((item) => (
-          <div key={item.id} className="w-5/6 flex-shrink-0 sm:w-full">
+          <div key={item.id} className="w-56 flex-shrink-0 sm:w-full">
             <Link to={`${link}/${item.id}`} className="block">
-              <Card 
-                name={item.name} 
-                description={item.description} 
-                image={item.image} 
-              />
+              <Card name={item.name} description={item.description} image={item.image} />
             </Link>
           </div>
         ))}
@@ -57,7 +48,6 @@ const CategoryPreview = ({ title, items, link = "#" }) => {
   );
 };
 
-// Placeholder component for the shimmer effect
 const ShimmerCategoryPreview = () => (
   <section className="py-12 md:py-16">
     <div className="h-10 w-1/2 bg-gray-300 rounded animate-pulse mb-8"></div>
@@ -71,14 +61,12 @@ const ShimmerCategoryPreview = () => (
   </section>
 );
 
-
 function HomePage() {
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500); // 1.5 second delay
+    setTimeout(() => { setIsLoading(false); }, 1500);
   }, []);
 
   return (
@@ -90,14 +78,11 @@ function HomePage() {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative text-center z-10 px-4">
-          <h1 
-            className="text-4xl md:text-6xl font-extrabold mb-4" 
-            style={{ fontFamily: "'Laila', sans-serif" }}
-          >
-            The Heart of Incredible India
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4" style={{ fontFamily: "'Laila', sans-serif" }}>
+            {t('hero_title')}
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-            Embark on a journey through a land of ancient wisdom, vibrant culture, and timeless traditions.
+            {t('hero_subtitle')}
           </p>
           <ScrollLink
             to="explore"
@@ -106,7 +91,7 @@ function HomePage() {
             offset={-70}
             className="cursor-pointer bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 transform hover:scale-105"
           >
-            Start Exploring
+            {t('start_exploring')}
           </ScrollLink>
         </div>
       </header>
@@ -121,13 +106,13 @@ function HomePage() {
           </>
         ) : (
           <>
-            <CategoryPreview title="Enchanting Destinations" items={touristSpots} link="/tourist-places" />
-            <CategoryPreview title="Flavors of Bihar" items={cuisines} link="/cuisines" />
-            <CategoryPreview title="Vibrant Festivals" items={festivals} link="/festivals" />
-            <CategoryPreview title="Timeless Art & Craft" items={arts} link="/arts" />
-            <CategoryPreview title="Sacred Temples" items={temples} link="/temples" />
-            <CategoryPreview title="Traditional Attire" items={clothes} link="/clothes" />
-            <CategoryPreview title="Glimpses of History" items={history} link="/history" />
+            <CategoryPreview title={t('enchanting_destinations')} items={touristSpots} link="/tourist-places" />
+            <CategoryPreview title={t('flavors_of_bihar')} items={cuisines} link="/cuisines" />
+            <CategoryPreview title={t('vibrant_festivals')} items={festivals} link="/festivals" />
+            <CategoryPreview title={t('timeless_art_craft')} items={arts} link="/arts" />
+            <CategoryPreview title={t('sacred_temples')} items={temples} link="/temples" />
+            <CategoryPreview title={t('traditional_attire')} items={clothes} link="/clothes" />
+            <CategoryPreview title={t('glimpses_of_history')} items={history} link="/history" />
           </>
         )}
       </main>
