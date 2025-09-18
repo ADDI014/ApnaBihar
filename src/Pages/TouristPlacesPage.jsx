@@ -1,7 +1,7 @@
-import React, { useState } from 'react'; // 1. Import useState
+import React, { useState, useEffect } from 'react';
 import Card from '../Components/Card';
-// CORRECT
-import { touristSpots } from '../data/HomePageData';
+import ShimmerCard from '../Components/ShimmerCard'; // 1. Import the shimmer component
+import { touristSpots as allSpotsData } from '../data/HomePageData'; // 2. Alias the imported data
 import { Link } from 'react-router-dom';
 
 // Search Icon SVG
@@ -12,10 +12,21 @@ const SearchIcon = () => (
 );
 
 function TouristPlacesPage() {
-  // 2. Add state to hold and update the user's search input
   const [searchTerm, setSearchTerm] = useState('');
+  
+  // 3. Add state for loading and for the page's data
+  const [isLoading, setIsLoading] = useState(true);
+  const [touristSpots, setTouristSpots] = useState([]);
 
-  // 3. Filter the tourist spots based on the search term
+  // 4. Use useEffect to simulate fetching data
+  useEffect(() => {
+    setTimeout(() => {
+      setTouristSpots(allSpotsData);
+      setIsLoading(false);
+    }, 1500); // 1.5 second delay
+  }, []);
+
+  // Filter the spots based on the search term (now uses state)
   const filteredSpots = touristSpots.filter(spot =>
     spot.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -35,7 +46,6 @@ function TouristPlacesPage() {
           </p>
         </div>
 
-        {/* 4. Add the search input field */}
         <div className="mb-12 max-w-lg mx-auto">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -51,25 +61,34 @@ function TouristPlacesPage() {
           </div>
         </div>
 
-        {/* 5. Conditionally render the grid or a "No results" message */}
-        {filteredSpots.length > 0 ? (
+        {/* 5. Conditionally render the Shimmer UI or the actual content */}
+        {isLoading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredSpots.map((item) => (
-              <Link to={`/tourist-places/${item.id}`} key={item.id} className="block">
-                <Card 
-                  name={item.name} 
-                  description={item.description} 
-                  image={item.image} 
-                  location={item.location}
-                />
-              </Link>
+            {/* Creates an array of 8 items to map over for the placeholders */}
+            {Array.from({ length: 8 }).map((_, index) => (
+              <ShimmerCard key={index} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
-            <h3 className="text-2xl font-semibold text-gray-700">No Destinations Found</h3>
-            <p className="text-gray-500 mt-2">Try adjusting your search or explore our other categories.</p>
-          </div>
+          filteredSpots.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {filteredSpots.map((item) => (
+                <Link to={`/tourist-places/${item.id}`} key={item.id} className="block">
+                  <Card 
+                    name={item.name} 
+                    description={item.description} 
+                    image={item.image} 
+                    location={item.location}
+                  />
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              <h3 className="text-2xl font-semibold text-gray-700">No Destinations Found</h3>
+              <p className="text-gray-500 mt-2">Try adjusting your search or explore our other categories.</p>
+            </div>
+          )
         )}
       </div>
     </div>

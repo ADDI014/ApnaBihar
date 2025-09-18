@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../Components/Card';
-import { cuisines } from '../data/HomePageData';
+import ShimmerCard from '../Components/ShimmerCard'; // 1. Import the ShimmerCard
+import { cuisines as allCuisinesData } from '../data/HomePageData'; // 2. Alias the imported data
 import { Link } from 'react-router-dom';
 
 const SearchIcon = () => (
@@ -12,17 +13,28 @@ const SearchIcon = () => (
 function CuisinesPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
+  // 3. Add state for loading and the page's data
+  const [isLoading, setIsLoading] = useState(true);
+  const [cuisines, setCuisines] = useState([]);
+
+  // 4. Use useEffect to simulate fetching data
+  useEffect(() => {
+    setTimeout(() => {
+      setCuisines(allCuisinesData);
+      setIsLoading(false);
+    }, 1500); // 1.5 second delay
+  }, []);
+  
   const filteredCuisines = cuisines.filter(cuisine =>
     cuisine.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="bg-stone-50">
-      {/* Hero Section */}
+      {/* Note: The Hero Section was removed in your provided code, so it is not included here. */}
       
       {/* Main Content */}
       <div className="container mx-auto px-6 py-12">
-        {/* Introductory Text Block */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
@@ -35,7 +47,6 @@ function CuisinesPage() {
           </p>
         </div>
 
-        {/* Search Bar */}
         <div className="mb-12 max-w-lg mx-auto">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -51,25 +62,32 @@ function CuisinesPage() {
           </div>
         </div>
 
-        {/* Conditional Grid of Cards */}
-        {filteredCuisines.length > 0 ? (
+        {/* 5. Conditional Rendering: Shimmer UI or your existing content */}
+        {isLoading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredCuisines.map((item) => (
-              <Link to={`/cuisines/${item.id}`} key={item.id} className="block">
-                <Card 
-                  name={item.name} 
-                  description={item.description} 
-                  image={item.image} 
-                  // Location prop is not needed for cuisines
-                />
-              </Link>
+            {Array.from({ length: 8 }).map((_, index) => (
+              <ShimmerCard key={index} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
-            <h3 className="text-2xl font-semibold text-gray-700">No Dishes Found</h3>
-            <p className="text-gray-500 mt-2">Try adjusting your search.</p>
-          </div>
+          filteredCuisines.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {filteredCuisines.map((item) => (
+                <Link to={`/cuisines/${item.id}`} key={item.id} className="block">
+                  <Card 
+                    name={item.name} 
+                    description={item.description} 
+                    image={item.image} 
+                  />
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              <h3 className="text-2xl font-semibold text-gray-700">No Dishes Found</h3>
+              <p className="text-gray-500 mt-2">Try adjusting your search.</p>
+            </div>
+          )
         )}
       </div>
     </div>
