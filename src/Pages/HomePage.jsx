@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Components/Card';
 import ShimmerCard from '../Components/ShimmerCard';
+import Hero from '../Components/Hero';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from "react-scroll";
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 import { 
@@ -15,6 +15,7 @@ import {
   history 
 } from '../data/HomePageData';
 
+// Reusable component for displaying a category with scroll animations
 const CategoryPreview = ({ title, items, link = "#" }) => {
   const { t } = useTranslation();
   const { ref, inView } = useInView({
@@ -37,9 +38,13 @@ const CategoryPreview = ({ title, items, link = "#" }) => {
       </div>
       <div className="flex overflow-x-auto space-x-6 pb-4 scrollbar-hide sm:grid sm:grid-cols-2 sm:gap-8 sm:space-x-0 lg:grid-cols-4">
         {items.slice(0, 4).map((item) => (
-          <div key={item.id} className="w-56 flex-shrink-0 sm:w-full">
+          <div key={item.id} className="w-5/6 flex-shrink-0 sm:w-full">
             <Link to={`${link}/${item.id}`} className="block">
-              <Card name={item.name} description={item.description} image={item.image} />
+              <Card 
+                name={item.name} 
+                description={item.description} 
+                image={item.image} 
+              />
             </Link>
           </div>
         ))}
@@ -48,6 +53,7 @@ const CategoryPreview = ({ title, items, link = "#" }) => {
   );
 };
 
+// Placeholder component for the shimmer effect
 const ShimmerCategoryPreview = () => (
   <section className="py-12 md:py-16">
     <div className="h-10 w-1/2 bg-gray-300 rounded animate-pulse mb-8"></div>
@@ -66,35 +72,13 @@ function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Simulate initial page load
     setTimeout(() => { setIsLoading(false); }, 1500);
   }, []);
 
   return (
     <div>
-      {/* Hero Section */}
-      <header 
-        className="relative h-[60vh] md:h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/images/Background/Home1.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative text-center z-10 px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4" style={{ fontFamily: "'Laila', sans-serif" }}>
-            {t('hero_title')}
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-            {t('hero_subtitle')}
-          </p>
-          <ScrollLink
-            to="explore"
-            smooth={true}
-            duration={800}
-            offset={-70}
-            className="cursor-pointer bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 transform hover:scale-105"
-          >
-            {t('start_exploring')}
-          </ScrollLink>
-        </div>
-      </header>
+      <Hero />
 
       {/* Main Content Area */}
       <main id="explore" className="container mx-auto px-6 divide-y divide-stone-200">
@@ -106,13 +90,13 @@ function HomePage() {
           </>
         ) : (
           <>
-            <CategoryPreview title={t('enchanting_destinations')} items={touristSpots} link="/tourist-places" />
-            <CategoryPreview title={t('flavors_of_bihar')} items={cuisines} link="/cuisines" />
-            <CategoryPreview title={t('vibrant_festivals')} items={festivals} link="/festivals" />
-            <CategoryPreview title={t('timeless_art_craft')} items={arts} link="/arts" />
-            <CategoryPreview title={t('sacred_temples')} items={temples} link="/temples" />
-            <CategoryPreview title={t('traditional_attire')} items={clothes} link="/clothes" />
-            <CategoryPreview title={t('glimpses_of_history')} items={history} link="/history" />
+            <CategoryPreview title={t('cat_tourist_places')} items={touristSpots} link="/tourist-places" />
+            <CategoryPreview title={t('cat_cuisines')} items={cuisines} link="/cuisines" />
+            <CategoryPreview title={t('cat_festivals')} items={festivals} link="/festivals" />
+            <CategoryPreview title={t('cat_arts')} items={arts} link="/arts" />
+            <CategoryPreview title={t('cat_temples')} items={temples} link="/temples" />
+            <CategoryPreview title={t('cat_clothes')} items={clothes} link="/clothes" />
+            <CategoryPreview title={t('cat_history')} items={history} link="/history" />
           </>
         )}
       </main>

@@ -17,14 +17,15 @@ const resources = {
       "hero_title": "The Heart of Incredible India",
       "hero_subtitle": "Embark on a journey through a land of ancient wisdom, vibrant culture, and timeless traditions.",
       "start_exploring": "Start Exploring",
-      "enchanting_destinations": "Enchanting Destinations",
-      "flavors_of_bihar": "Flavors of Bihar",
-      "vibrant_festivals": "Vibrant Festivals",
-      "timeless_art_craft": "Timeless Art & Craft",
-      "sacred_temples": "Sacred Temples",
-      "traditional_attire": "Traditional Attire",
-      "glimpses_of_history": "Glimpses of History",
-      "view_all": "View All"
+      "view_all": "View All",
+      // Category Titles
+      "cat_tourist_places": "Enchanting Destinations",
+      "cat_cuisines": "Flavors of Bihar",
+      "cat_festivals": "Vibrant Festivals",
+      "cat_arts": "Timeless Art & Craft",
+      "cat_temples": "Sacred Temples",
+      "cat_clothes": "Traditional Attire",
+      "cat_history": "Glimpses of History",
     }
   },
   hi: {
@@ -40,14 +41,15 @@ const resources = {
       "hero_title": "अतुल्य भारत का हृदय",
       "hero_subtitle": "प्राचीन ज्ञान, जीवंत संस्कृति और कालातीत परंपराओं की भूमि के माध्यम से एक यात्रा पर निकलें।",
       "start_exploring": "अन्वेषण शुरू करें",
-      "enchanting_destinations": "मनमोहक स्थल",
-      "flavors_of_bihar": "बिहार के स्वाद",
-      "vibrant_festivals": "जीवंत त्यौहार",
-      "timeless_art_craft": "कालातीत कला और शिल्प",
-      "sacred_temples": "पवित्र मंदिर",
-      "traditional_attire": "पारंपरिक परिधान",
-      "glimpses_of_history": "इतिहास की झलकियाँ",
-      "view_all": "सभी देखें"
+      "view_all": "सभी देखें",
+      // Category Titles
+      "cat_tourist_places": "मनमोहक स्थल",
+      "cat_cuisines": "बिहार के स्वाद",
+      "cat_festivals": "जीवंत त्यौहार",
+      "cat_arts": "कालातीत कला और शिल्प",
+      "cat_temples": "पवित्र मंदिर",
+      "cat_clothes": "पारंपरिक परिधान",
+      "cat_history": "इतिहास की झलकियाँ",
     }
   },
   bho: {
@@ -63,14 +65,15 @@ const resources = {
       "hero_title": "अतुल्य भारत के धइल हिया",
       "hero_subtitle": "पुरान ज्ञान, जीवंत संस्कृति आ कालातीत परंपरा के भूमि से होके यात्रा पर निकलीं।",
       "start_exploring": "खोज शुरू करीं",
-      "enchanting_destinations": "मनमोहक जगह",
-      "flavors_of_bihar": "बिहार के सवाद",
-      "vibrant_festivals": "जीवंत तिउहार",
-      "timeless_art_craft": "कालातीत कला आ शिल्प",
-      "sacred_temples": "पवित्र मंदिर",
-      "traditional_attire": "पारंपरिक पहिनावा",
-      "glimpses_of_history": "इतिहास के झलक",
-      "view_all": "सब देखीं"
+      "view_all": "सब देखीं",
+      // Category Titles
+      "cat_tourist_places": "मनमोहक जगह",
+      "cat_cuisines": "बिहार के सवाद",
+      "cat_festivals": "जीवंत तिउहार",
+      "cat_arts": "कालातीत कला आ शिल्प",
+      "cat_temples": "पवित्र मंदिर",
+      "cat_clothes": "पारंपरिक पहिनावा",
+      "cat_history": "इतिहास के झलक",
     }
   },
   mai: {
@@ -86,14 +89,15 @@ const resources = {
       "hero_title": "अतुल्य भारतक हृदय",
       "hero_subtitle": "प्राचीन ज्ञान, जीवंत संस्कृति आ कालातीत परंपराक भूमि सं गुजरू.",
       "start_exploring": "अन्वेषण शुरू करू",
-      "enchanting_destinations": "मनमोहक स्थल",
-      "flavors_of_bihar": "बिहारक स्वाद",
-      "vibrant_festivals": "जीवंत पर्व-त्योहार",
-      "timeless_art_craft": "कालातीत कला आ शिल्प",
-      "sacred_temples": "पवित्र मंदिर",
-      "traditional_attire": "पारंपरिक परिधान",
-      "glimpses_of_history": "इतिहासक झलक",
-      "view_all": "सब देखू"
+      "view_all": "सब देखू",
+      // Category Titles
+      "cat_tourist_places": "मनमोहक स्थल",
+      "cat_cuisines": "बिहारक स्वाद",
+      "cat_festivals": "जीवंत पर्व-त्योहार",
+      "cat_arts": "कालातीत कला आ शिल्प",
+      "cat_temples": "पवित्र मंदिर",
+      "cat_clothes": "पारंपरिक परिधान",
+      "cat_history": "इतिहासक झलक",
     }
   },
   mag: {
@@ -109,14 +113,15 @@ const resources = {
       "hero_title": "अतुल्य भारत के हिरदय",
       "hero_subtitle": "पुरान ज्ञान, जीवंत संस्कृति और कालातीत परंपरा के धरती से होके एगो यात्रा पर निकलीं।",
       "start_exploring": "खोजल शुरू करीं",
-      "enchanting_destinations": "मनमोहित करेवाला जगह",
-      "flavors_of_bihar": "बिहार के सवाद",
-      "vibrant_festivals": "जीवंत तिउहार",
-      "timeless_art_craft": "कालातीत कला-शिल्प",
-      "sacred_temples": "पवित्र मंदिर",
-      "traditional_attire": "पारंपरिक पहिनावा",
-      "glimpses_of_history": "इतिहास के झलक",
-      "view_all": "सब देखीं"
+      "view_all": "सब देखीं",
+      // Category Titles
+      "cat_tourist_places": "मनमोहित करेवाला जगह",
+      "cat_cuisines": "बिहार के सवाद",
+      "cat_festivals": "जीवंत तिउहार",
+      "cat_arts": "कालातीत कला-शिल्प",
+      "cat_temples": "पवित्र मंदिर",
+      "cat_clothes": "पारंपरिक पहिनावा",
+      "cat_history": "इतिहास के झलक",
     }
   }
 };

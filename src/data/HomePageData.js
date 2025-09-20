@@ -64,7 +64,7 @@ export const touristSpots = [
     id: 5,
     name: "Vishnupad Temple, Gaya",
     location: "Gaya",
-    image: "/images/tourist-spots/vishnupad-temple.jpg",
+    image: "/images/tourist-spots/Vishnupad Temple.jpeg",
     images: [
       "/images/tourist-spots/vishnupad-temple.jpg",
     ],
@@ -78,7 +78,7 @@ export const touristSpots = [
     id: 6,
     name: "Sher Shah Suri's Tomb, Sasaram",
     location: "Sasaram",
-    image: "/images/tourist-spots/sher-shah-tomb.jpg",
+    image: "/images/tourist-spots/sher-shah-tomb.jpeg",
     images: [
       "/images/tourist-spots/sher-shah-tomb.jpg",
     ],
@@ -92,7 +92,7 @@ export const touristSpots = [
     id: 7,
     name: "Jal Mandir, Pawapuri",
     location: "Pawapuri",
-    image: "/images/tourist-spots/jal-mandir.jpg",
+    image: "/images/tourist-spots/jal-mandir.jpeg",
     images: [
       "/images/tourist-spots/jal-mandir.jpg",
     ],
@@ -106,7 +106,7 @@ export const touristSpots = [
     id: 8,
     name: "Bihar Museum, Patna",
     location: "Patna",
-    image: "/images/tourist-spots/bihar-museum.jpg",
+    image: "/images/tourist-spots/bihar-museum.jpeg",
     images: [
       "/images/tourist-spots/bihar-museum.jpg",
     ],
@@ -120,7 +120,7 @@ export const touristSpots = [
     id: 9,
     name: "Golghar, Patna",
     location: "Patna",
-    image: "/images/tourist-spots/golghar.jpg",
+    image: "/images/tourist-spots/golghar.jpeg",
     images: [
       "/images/tourist-spots/golghar.jpg",
     ],
@@ -134,9 +134,9 @@ export const touristSpots = [
     id: 10,
     name: "Barabar Caves",
     location: "Jehanabad district",
-    image: "/images/tourist-spots/barabar-caves.jpg",
+    image: "/images/tourist-spots/barabar-caves.jpeg",
     images: [
-      "/images/tourist-spots/barabar-caves.jpg",
+      "/images/tourist-spots/barabar-caves.jpeg",
     ],
     description: "The oldest surviving rock-cut caves in India, dating back to the Mauryan Empire.",
     long_description: "These ancient caves, carved out of monolithic granite, represent the beginning of the rock-cut architecture tradition in India. The interiors have an astonishing glass-like polish, and they were used by the Ajivika ascetics.",
@@ -148,7 +148,7 @@ export const touristSpots = [
     id: 11,
     name: "Takht Sri Patna Sahib",
     location: "Patna",
-    image: "/images/tourist-spots/patna-sahib.jpg",
+    image: "/images/tourist-spots/patna-sahib.jpeg",
     images: [
       "/images/tourist-spots/patna-sahib.jpg",
     ],
@@ -162,7 +162,7 @@ export const touristSpots = [
     id: 12,
     name: "Vikramshila Ruins, Bhagalpur",
     location: "Bhagalpur",
-    image: "/images/tourist-spots/vikramshila.jpg",
+    image: "/images/tourist-spots/vikramshila.jpeg",
     images: [
       "/images/tourist-spots/vikramshila.jpg",
     ],
@@ -176,7 +176,7 @@ export const touristSpots = [
     id: 13,
     name: "Kakolat Falls, Nawada",
     location: "Nawada",
-    image: "/images/tourist-spots/kakolat-falls.jpg",
+    image: "/images/tourist-spots/kakolat-falls.jpeg",
     images: [
       "/images/tourist-spots/kakolat-falls.jpg",
     ],
@@ -190,7 +190,7 @@ export const touristSpots = [
     id: 14,
     name: "Valmiki National Park",
     location: "West Champaran",
-    image: "/images/tourist-spots/valmiki-park.jpg",
+    image: "/images/tourist-spots/valmiki-park.jpeg",
     images: [
       "/images/tourist-spots/valmiki-park.jpg",
     ],
@@ -239,7 +239,7 @@ export const cuisines = [
   {
     id: 5,
     name: "Dal Pitha",
-    image: "/images/cuisines/dal-pitha.jpg",
+    image: "/images/cuisines/dal-pitha.jpeg",
     description: "Steamed rice flour dumplings stuffed with a spiced lentil filling, similar to a savory momo.",
     long_description: "Dal Pitha is a healthy and traditional Bihari delicacy. These are steamed dumplings made from a rice flour dough and filled with a savory, spiced lentil mixture. They can be either steamed or fried and are often enjoyed as a breakfast or snack item.",
     ingredients: ["Rice flour", "Chana dal (lentils)", "Ginger", "Garlic", "Turmeric", "Spices"],
@@ -247,7 +247,7 @@ export const cuisines = [
   {
     id: 6,
     name: "Khaja",
-    image: "/images/cuisines/khaja.jpg",
+    image: "/images/cuisines/khaja.jpeg",
     description: "A traditional dessert known for its crispy, layered texture, which is then soaked in sugar syrup.",
     long_description: "Originating from the region, Khaja is a celebrated sweet, especially famous in Silao. It consists of dough made from flour and ghee, which is layered multiple times, deep-fried until golden and crispy, and finally dipped in a fragrant sugar syrup.",
     ingredients: ["All-purpose flour (Maida)", "Ghee", "Sugar", "Cardamom"],
@@ -255,7 +255,7 @@ export const cuisines = [
   {
     id: 7,
     name: "Malpua",
-    image: "/images/cuisines/malpua.jpg",
+    image: "/images/cuisines/malpua.jpeg",
     description: "A sweet pancake-like dessert, deep-fried in ghee and dipped in sugar syrup.",
     long_description: "Malpua is a popular sweet dish served during festivals, especially Holi. A batter of flour, milk, and mashed bananas is deep-fried in ghee to form small pancakes, which are then soaked in sugar syrup. They are soft, rich, and absolutely decadent.",
     ingredients: ["All-purpose flour (Maida)", "Milk", "Banana", "Sugar", "Fennel seeds", "Ghee"],
@@ -263,7 +263,7 @@ export const cuisines = [
   {
     id: 8,
     name: "Chana Ghugni",
-    image: "/images/cuisines/chana-ghugni.jpg",
+    image: "/images/cuisines/chana-ghugni.jpeg",
     description: "A spicy and tangy evening snack made from black chickpeas, often served with puffed rice.",
     long_description: "Ghugni is a popular street food and evening snack in Bihar. It's a simple yet flavorful curry made with soaked and boiled black chickpeas (kala chana), cooked with onions, tomatoes, and a blend of spices. It's often garnished with chopped onions and enjoyed with muri (puffed rice).",
     ingredients: ["Black chickpeas (Kala Chana)", "Onion", "Tomato", "Ginger-Garlic paste", "Spices"],
@@ -271,7 +271,7 @@ export const cuisines = [
   {
     id: 9,
     name: "Laung-Latta",
-    image: "/images/cuisines/laung-latta.jpg",
+    image: "/images/cuisines/laung-latta.jpeg",
     description: "A delectable pastry filled with khoya and nuts, folded and sealed with a clove, then soaked in syrup.",
     long_description: "Laung-Latta is a traditional sweet pastry. A dough of flour is rolled out, filled with a rich mixture of sweetened khoya (milk solids) and nuts, folded into a rectangular parcel, and sealed with a clove (laung) before being fried and soaked in sugar syrup.",
     ingredients: ["All-purpose flour", "Khoya", "Nuts", "Clove (Laung)", "Sugar", "Ghee"],
@@ -279,7 +279,7 @@ export const cuisines = [
   {
     id: 10,
     name: "Balushahi",
-    image: "/images/cuisines/balushahi.jpg",
+    image: "/images/cuisines/balushahi.jpeg",
     description: "A traditional Indian sweet with a flaky texture, resembling a glazed donut.",
     long_description: "Balushahi is a popular sweet across North India, with a special place in Bihari cuisine. It is made from a dough of all-purpose flour and ghee, deep-fried on low heat until golden, and then submerged in a thick sugar syrup. The texture is crispy on the outside and soft and flaky on the inside.",
     ingredients: ["All-purpose flour", "Yogurt", "Baking soda", "Ghee", "Sugar"],
@@ -287,7 +287,7 @@ export const cuisines = [
   {
     id: 11,
     name: "Parwal ki Mithai",
-    image: "/images/cuisines/parwal-ki-mithai.jpg",
+    image: "/images/cuisines/parwal-ki-mithai.jpeg",
     description: "A unique and delicious sweet made by stuffing pointed gourd (parwal) with sweetened khoya.",
     long_description: "A truly unique Bihari dessert, Parwal ki Mithai is made from pointed gourd. The vegetable is scraped, boiled in sugar syrup to sweeten it, and then filled with a rich, sweetened khoya mixture. It's a surprising and delightful treat.",
     ingredients: ["Pointed gourd (Parwal)", "Khoya", "Sugar", "Nuts", "Cardamom"],
@@ -295,7 +295,7 @@ export const cuisines = [
   {
     id: 12,
     name: "Rasia",
-    image: "/images/cuisines/rasia.jpg",
+    image: "/images/cuisines/rasia.jpeg",
     description: "A special type of kheer (rice pudding) made with jaggery instead of sugar, especially during Chhath Puja.",
     long_description: "Rasia is a traditional rice pudding that is a quintessential part of the Chhath Puja offerings. Unlike regular kheer, it is sweetened with jaggery (gur), which gives it a distinct earthy flavor and a beautiful golden-brown color. It is cooked slowly with rice and milk until thick and creamy.",
     ingredients: ["Rice", "Milk", "Jaggery (Gur)", "Cardamom", "Nuts"],
@@ -303,7 +303,7 @@ export const cuisines = [
   {
     id: 13,
     name: "Sattu Sharbat",
-    image: "/images/cuisines/sattu-sharbat.jpg",
+    image: "/images/cuisines/sattu-sharbat.jpeg",
     description: "A savory and cooling summer drink made from roasted gram flour, hailed as a superfood.",
     long_description: "Sattu Sharbat is the ultimate summer cooler of Bihar. It is a nutritious drink made by mixing sattu (roasted gram flour) with water, salt, roasted cumin powder, and lemon juice. It's known for its cooling properties and provides instant energy.",
     ingredients: ["Sattu", "Water", "Lemon juice", "Roasted cumin powder", "Black salt"],
@@ -311,7 +311,7 @@ export const cuisines = [
   {
     id: 14,
     name: "Bihari Mutton Curry",
-    image: "/images/cuisines/bihari-mutton-curry.jpg",
+    image: "/images/cuisines/bihari-mutton-curry.jpeg",
     description: "A rustic and robust mutton curry known for its simple preparation and deep, smoky flavors.",
     long_description: "Bihari Mutton Curry is famous for its unique cooking style, often prepared in a single pot (handi). It uses a generous amount of onions, whole spices, and mustard oil, which are slow-cooked with the mutton until the meat is tender and the gravy is thick and aromatic. It's a hearty and flavorful dish.",
     ingredients: ["Mutton", "Onion", "Ginger-Garlic paste", "Mustard oil", "Whole spices (cloves, cinnamon, cardamom)"],
@@ -319,7 +319,7 @@ export const cuisines = [
   {
     id: 15,
     name: "Khichdi",
-    image: "/images/cuisines/khichdi.jpg",
+    image: "/images/cuisines/khichdi.jpeg",
     description: "The humble and wholesome dish of rice and lentils, a staple during the Makar Sankranti festival.",
     long_description: "While Khichdi is eaten across India, it holds a special place in Bihar, especially during the festival of Makar Sankranti. It is prepared with rice, lentils, and seasonal vegetables, and often enjoyed with a variety of side dishes like chokha, ghee, and pickles. It's a complete and comforting meal.",
     ingredients: ["Rice", "Lentils (Dal)", "Turmeric", "Ghee", "Mixed vegetables"],
