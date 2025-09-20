@@ -386,7 +386,7 @@ export const festivals = [
   {
     id: 8,
     name: "Buddha Jayanti",
-    image: "/images/festivals/buddha-jayanti.jpg",
+    image: "/images/festivals/buddha-jayanti.jpeg",
     description: "The birth of Lord Buddha is celebrated with immense devotion, especially in Bodh Gaya.",
     time_of_year: "April-May (on Vaisakh Purnima)",
     significance: "As Bihar is the land of Buddha's enlightenment, Buddha Jayanti is celebrated with great reverence. The Mahabodhi Temple in Bodh Gaya becomes the epicenter of celebrations, attracting Buddhist devotees from around the globe."
@@ -394,7 +394,7 @@ export const festivals = [
   {
     id: 9,
     name: "Saraswati Puja",
-    image: "/images/festivals/saraswati-puja.jpg",
+    image: "/images/festivals/saraswati-puja.jpeg",
     description: "A vibrant festival dedicated to the goddess of knowledge, music, and art, celebrated with great zeal by students.",
     time_of_year: "January-February (Basant Panchami)",
     significance: "Saraswati Puja is a major event in Bihar, especially for students and educational institutions. Elaborate pandals are set up, and idols of the goddess are worshipped to seek blessings for wisdom and learning."
@@ -418,7 +418,7 @@ export const festivals = [
   {
     id: 12,
     name: "Ram Navami",
-    image: "/images/festivals/ram-navami.jpg",
+    image: "/images/festivals/ram-navami.jpeg",
     description: "The festival celebrating the birth of Lord Rama, marked by processions and devotional songs.",
     time_of_year: "March-April",
     significance: "Ram Navami is celebrated with great devotion across Bihar. Temples are decorated, and religious processions carrying idols of Lord Rama, Sita, Lakshmana, and Hanuman are taken out, accompanied by bhajans and chanting."
