@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Components/Card';
-import ShimmerCard from '../Components/ShimmerCard'; // 1. Import the shimmer component
-import { touristSpots as allSpotsData } from '../data/HomePageData'; // 2. Alias the imported data
+import ShimmerCard from '../Components/ShimmerCard';
 import { Link } from 'react-router-dom';
 
-// Search Icon SVG
 const SearchIcon = () => (
   <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
     <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
@@ -14,38 +12,54 @@ const SearchIcon = () => (
 function TouristPlacesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   
-  // 3. Add state for loading and for the page's data
   const [isLoading, setIsLoading] = useState(true);
   const [touristSpots, setTouristSpots] = useState([]);
 
-  // 4. Use useEffect to simulate fetching data
   useEffect(() => {
-    setTimeout(() => {
-      setTouristSpots(allSpotsData);
-      setIsLoading(false);
-    }, 1500); // 1.5 second delay
+    const fetchSpots = async () => {
+      try {
+        const res = await fetch('https://apnabihar-api.onrender.com/api/tourist-spots');
+        const data = await res.json();
+        setTouristSpots(data);
+      }
+      catch(err) {
+        console.log("Failed to fecth tourist spots:" , err);
+      }
+      finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchSpots();
   }, []);
 
-  // Filter the spots based on the search term (now uses state)
   const filteredSpots = touristSpots.filter(spot =>
     spot.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  return (
+return (
     <div className="bg-stone-50">
-      <div className="container mx-auto px-6 py-12">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      {/* Hero Section */}
+      <header 
+        className="relative h-96 bg-cover bg-center" 
+        style={{ backgroundImage: "url('/images/Background/bihar-panorama.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
           <h1 
-            className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+            className="text-4xl md:text-6xl font-extrabold"
             style={{ fontFamily: "'Laila', sans-serif" }}
           >
-            Explore the Wonders of Bihar
+            Enchanting Destinations
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            From the sacred grounds where Buddhism was born to ancient empires that shaped a continent, Bihar is a land steeped in history and spirituality. Discover breathtaking natural beauty, magnificent architectural marvels, and sites of profound peace. Your journey into the heart of India's heritage begins here.
+          <p className="text-lg md:text-xl max-w-3xl mt-4">
+            From sacred grounds to ancient empires, discover the wonders that make Bihar the heart of India's heritage.
           </p>
         </div>
+      </header>
 
+      {/* Main Content */}
+      <div className="container mx-auto px-6 py-12">
         <div className="mb-12 max-w-lg mx-auto">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -61,10 +75,9 @@ function TouristPlacesPage() {
           </div>
         </div>
 
-        {/* 5. Conditionally render the Shimmer UI or the actual content */}
+        {/* Conditional Rendering: Shimmer UI or Actual Content */}
         {isLoading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {/* Creates an array of 8 items to map over for the placeholders */}
             {Array.from({ length: 8 }).map((_, index) => (
               <ShimmerCard key={index} />
             ))}
@@ -86,7 +99,7 @@ function TouristPlacesPage() {
           ) : (
             <div className="text-center py-16">
               <h3 className="text-2xl font-semibold text-gray-700">No Destinations Found</h3>
-              <p className="text-gray-500 mt-2">Try adjusting your search or explore our other categories.</p>
+              <p className="text-gray-500 mt-2">Try adjusting your search.</p>
             </div>
           )
         )}
